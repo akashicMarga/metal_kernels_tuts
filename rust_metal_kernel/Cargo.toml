@@ -1,0 +1,12 @@
+[package]
+name = "rust_metal_kernel"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+metal = "0.24.0"
+objc = "0.2"
+pyo3 = { version = "0.18", features = ["extension-module"] }
+
+[lib]
+crate-type = ["cdylib"]
